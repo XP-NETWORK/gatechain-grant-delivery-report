@@ -1,12 +1,12 @@
 # GateChain Grant Delivery report
 
-## `Milestone 1` — Smart Contract Development
+## `Milestone 1` — Bridge Integration
 
 | Delivery Date | Deliverable | Specification |
 |:-:|:-:|:-|
 |2022/04/06|Integration|1.1. We've' researched about GateChain standards and other factors & protocols that distinguish it from other chains<br/>1.2. [Validation](https://github.com/XP-NETWORK/migration-validator) - we've' added the validation logic relevant for the GateChain part of the bridge<br/>1.3. [TX fee estimation]() - we've' integrated GateChain to the [TX fee estimator](https://github.com/XP-NETWORK/estimator)<br/>1.4. [Heartbeat](https://github.com/XP-NETWORK/validator-pinger) - we've' plugged GateChain to the bridge heartbeat<br/>1.5.Node integration - we've'plugged to a [node](), started [testnet](https://testnet.gatenode.cc) and [mainnet](https://evm.gatenode.cc) event listening and TX submission<br/>1.6. UI - we've'integrated GateChain in the bridge UI<br/>1.7. Smart Contracts - we've' deployd [smart contracts](#33-deployed-smart-contracts) on the testnet<br/>1.8. [JS library](https://github.com/XP-NETWORK/xpjs/commit/06533f92431ef1e27142607136430865ba1972e1) - we will add GateChain to the bridge<br/>1.9. REST API - we will add GateChain to the REST API<br/>1.10. Widget - we've' added GateChain to the bridge widget<br/>1.11. Testing SCs - We've tested the contracts in the testnet environment|
 
-## `Milestone 2`
+## `Milestone 2` Mainnet Launch
 
 Work-in-Progress<br/>
 
