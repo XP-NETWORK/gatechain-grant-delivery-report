@@ -1,5 +1,8 @@
 # GateChain Grant Delivery report
 
+The present document reports on the GateChain Grant delivery.
+
+GateChain on the list of the chains available as departure or destination chains:
 ![GateChain](assets/1.png)
 
 ## `Milestone 1` — Bridge Integration
@@ -8,6 +11,7 @@
 |:-:|:-:|:-|
 |2022/04/06|Integration|1.1. We've' researched about GateChain standards and other factors & protocols that distinguish it from other chains<br/>1.2. [Validation](https://github.com/XP-NETWORK/migration-validator) - we've' added the validation logic relevant for the GateChain part of the bridge<br/>1.3. [TX fee estimation]() - we've' integrated GateChain to the [TX fee estimator](https://github.com/XP-NETWORK/estimator)<br/>1.4. [Heartbeat](https://github.com/XP-NETWORK/validator-pinger) - we've' plugged GateChain to the bridge heartbeat<br/>1.5.Node integration - we've'plugged to a [node](), started [testnet](https://testnet.gatenode.cc) and [mainnet](https://evm.gatenode.cc) event listening and TX submission<br/>1.6. UI - we've'integrated GateChain in the [bridge UI](https://staging-bridge.xp.network/)<br/>1.7. Smart Contracts - we've' deployd [smart contracts](#232-deployed-smart-contracts-on-the-testnet) on the testnet<br/>1.8. [JS library](https://github.com/XP-NETWORK/xpjs/commit/06533f92431ef1e27142607136430865ba1972e1) - we will add GateChain to the bridge<br/>1.9. REST API - we will add GateChain to the REST API<br/>1.10. Widget - we've' added GateChain to the bridge [widget](https://widget.xp.network/?widget=true&wsettings=true#)<br/>1.11. Testing SCs - We've tested the contracts in the testnet environment|
 
+NFT-Indexer fetches the information about the NFTs owned on GateChain:
 ![NftsListed](assets/2.jpg)
 ## `Milestone 2` Mainnet Launch
 
@@ -17,7 +21,7 @@
 |:-:|:-:|:-|
 | 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474) <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain) <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3. We will make announcements about integrating GateChain in the bridge|
 
-### 2.2 Deployed Smart Contracts on the Mainnet
+### 2.2.1 Deployed Smart Contracts on the Mainnet
 
 |Name|GateChain Mainnet Address|
 |:-:|:-:|
@@ -25,7 +29,21 @@
 |ERC721|0xD6939f722B977afd7DD934A31bc94d08d4ea4336|
 |ERC-1155|0xc45759e51CdDBa46db4D1becC8B8Bcbe5d4a9bB4|
 
+### 2.2.2 Mainnet transfer transactions
+
+> Example of Sending NFTs from GateChain to Polygon (Video):
+<video src="./assets/video.mp4" width="100%"></video>
+
+> Successful transaction popup window:
+![From GateChain](assets/4.jpg)
+
+> Transaction hashes:<br/>
+[+ On GateChain](https://www.gatescan.org/tx/0xda4eea06d0358587f32ab27b01261d41008a36ff688a509f30ed92db80a33986)<br/>[+ On Polygon](https://polygonscan.com/tx//0x189d4021cb73215d0d3d0395c1fab7d7fb2192ad7b21dff4e8cad6810911db70)
+
+
+> Transferring GateChain is available, for example, from BSC
 ![Succesful Transfer](assets/3.jpg)
+
 ### 2.3 Testing Documentation
 
 #### 2.3.1.1 Initiating a Node.js project
