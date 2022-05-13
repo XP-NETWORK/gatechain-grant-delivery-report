@@ -1,20 +1,23 @@
 # GateChain Grant Delivery report
 
+![GateChain](assets/1.png)
+
 ## `Milestone 1` — Bridge Integration
 
 | Delivery Date | Deliverable | Specification |
 |:-:|:-:|:-|
-|2022/04/06|Integration|1.1. We've' researched about GateChain standards and other factors & protocols that distinguish it from other chains<br/>1.2. [Validation](https://github.com/XP-NETWORK/migration-validator) - we've' added the validation logic relevant for the GateChain part of the bridge<br/>1.3. [TX fee estimation]() - we've' integrated GateChain to the [TX fee estimator](https://github.com/XP-NETWORK/estimator)<br/>1.4. [Heartbeat](https://github.com/XP-NETWORK/validator-pinger) - we've' plugged GateChain to the bridge heartbeat<br/>1.5.Node integration - we've'plugged to a [node](), started [testnet](https://testnet.gatenode.cc) and [mainnet](https://evm.gatenode.cc) event listening and TX submission<br/>1.6. UI - we've'integrated GateChain in the bridge UI<br/>1.7. Smart Contracts - we've' deployd [smart contracts](#33-deployed-smart-contracts) on the testnet<br/>1.8. [JS library](https://github.com/XP-NETWORK/xpjs/commit/06533f92431ef1e27142607136430865ba1972e1) - we will add GateChain to the bridge<br/>1.9. REST API - we will add GateChain to the REST API<br/>1.10. Widget - we've' added GateChain to the bridge widget<br/>1.11. Testing SCs - We've tested the contracts in the testnet environment|
+|2022/04/06|Integration|1.1. We've' researched about GateChain standards and other factors & protocols that distinguish it from other chains<br/>1.2. [Validation](https://github.com/XP-NETWORK/migration-validator) - we've' added the validation logic relevant for the GateChain part of the bridge<br/>1.3. [TX fee estimation]() - we've' integrated GateChain to the [TX fee estimator](https://github.com/XP-NETWORK/estimator)<br/>1.4. [Heartbeat](https://github.com/XP-NETWORK/validator-pinger) - we've' plugged GateChain to the bridge heartbeat<br/>1.5.Node integration - we've'plugged to a [node](), started [testnet](https://testnet.gatenode.cc) and [mainnet](https://evm.gatenode.cc) event listening and TX submission<br/>1.6. UI - we've'integrated GateChain in the [bridge UI](https://staging-bridge.xp.network/)<br/>1.7. Smart Contracts - we've' deployd [smart contracts](#232-deployed-smart-contracts-on-the-testnet) on the testnet<br/>1.8. [JS library](https://github.com/XP-NETWORK/xpjs/commit/06533f92431ef1e27142607136430865ba1972e1) - we will add GateChain to the bridge<br/>1.9. REST API - we will add GateChain to the REST API<br/>1.10. Widget - we've' added GateChain to the bridge [widget](https://widget.xp.network/?widget=true&wsettings=true#)<br/>1.11. Testing SCs - We've tested the contracts in the testnet environment|
 
+![NftsListed](assets/2.jpg)
 ## `Milestone 2` Mainnet Launch
 
 ### 2.1
 
 | Estimated Delivery Date | Deliverable | Specification |
 |:-:|:-:|:-|
-| 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474), <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain), <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3. We will make announcements about integrating GateChain in the bridge|
+| 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474) <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain) <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3. We will make announcements about integrating GateChain in the bridge|
 
-### 2.2 3.3 Deployed Smart Contracts on the Mainnet
+### 2.2 Deployed Smart Contracts on the Mainnet
 
 |Name|GateChain Mainnet Address|
 |:-:|:-:|
@@ -22,22 +25,23 @@
 |ERC721|0xD6939f722B977afd7DD934A31bc94d08d4ea4336|
 |ERC-1155|0xc45759e51CdDBa46db4D1becC8B8Bcbe5d4a9bB4|
 
-## 3.1 Testing Documentation
+![Succesful Transfer](assets/3.jpg)
+### 2.3 Testing Documentation
 
-### 3.1.1 Initiating a Node.js project
+#### 2.3.1.1 Initiating a Node.js project
 ```bash
 mkdir testing_gate_chain_project
 cd testing_gate_chain_project/
 yarn init -y
 ```
 
-### 3.1.2 Installing the JavaScript Library
+#### 2.3.1.2 Installing the JavaScript Library
 
 ```bash
 yarn add "git+https://github.com/xp-network/xpjs#bleeding-edge" @elrondnetwork/erdjs ethers @taquito/taquito @temple-wallet/dapp dotenv
 ```
 
-### 3.1.3 Importing the dependancies
+#### 2.3..1.3 Importing the dependancies
 
 ```ts
 import {
@@ -56,7 +60,7 @@ const testnetConfig = ChainFactoryConfigs.TestNet();
 const factory = ChainFactory(AppConfigs.TestNet(), testnetConfig);
 ```
 
-### 3.1.4 Creating a signer object
+#### 2.3.1.4 Creating a signer object
 
 ```bash
 touch .env
@@ -76,7 +80,7 @@ const signer = new Wallet(
 console.log("signer", signer);
 ```
 
-### 3.1.5 Creating inner Blockchain objects
+#### 2.3.1.5 Creating inner Blockchain objects
 
 ```ts
 (async () => {
@@ -105,7 +109,7 @@ console.log("signer", signer);
 })();
 ```
 
-### 3.1.6 Minting NFTs for testing
+#### 2.3.1.6 Minting NFTs for testing
 ```ts
 (async () => {
    const nftResult = await factory.mint(
@@ -120,7 +124,7 @@ console.log("signer", signer);
 })();
 ```
 
-### 3.1.7 Getting a list of NFTs a user owns on a Blockchain
+#### 2.3.1.7 Getting a list of NFTs a user owns on a Blockchain
 ```ts
 (async () => {
   // Getting a list of NFTs
@@ -132,7 +136,7 @@ console.log("signer", signer);
   console.log("NFTs:", gateChainNFTs);
 })();
 ```
-### 3.1.8  Transferring an NFT
+#### 2.3.1.8  Transferring an NFT
 ```ts
 (async () => {
     // Calling the function:
@@ -147,7 +151,7 @@ console.log("signer", signer);
 })();
 ```
 
-## 3.3 Deployed Smart Contracts on the Testnet
+#### 2.3.2 Deployed Smart Contracts on the Testnet
 
 Since there are no marketplaces on most of the testnets, use `UserNftMinter` contract for minting NFTs on the GateChain testnet. 
 
