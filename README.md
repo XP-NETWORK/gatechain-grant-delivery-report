@@ -31,8 +31,9 @@ NFT-Indexer fetches the information about the NFTs owned on GateChain:
 
 ### 2.2.2 Mainnet transfer transactions
 
-> Example of Sending NFTs from GateChain to Polygon (Video):<br/>
-https://github.com/XP-NETWORK/gatechain-grant-delivery-report/blob/master/assets/video.mp4
+> Example of Sending NFTs from GateChain to Polygon (Video):
+
+https://youtu.be/6QsORQ3X418
 
 > Successful transaction popup window:
 ![From GateChain](assets/4.jpg)
