@@ -8,11 +8,19 @@
 
 ## `Milestone 2` Mainnet Launch
 
-Work-in-Progress<br/>
+### 2.1
 
 | Estimated Delivery Date | Deliverable | Specification |
 |:-:|:-:|:-|
-| 2022/04/21 | Launch | 2.1 Mainnet contract deployment - we will deploy smart contracts on the mainnet.<br/>2.2 JS Library integration - we will integrate GateChain in the validators. NFT-Lister,<br/>2.3. We will make announcements about integrating GateChain in the bridge|
+| 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474), <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain), <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3. We will make announcements about integrating GateChain in the bridge|
+
+### 2.2 3.3 Deployed Smart Contracts on the Mainnet
+
+|Name|GateChain Mainnet Address|
+|:-:|:-:|
+|Bridge SC|0xFc7f7fD2DBdAF6D8F3ee3f222b3a6a9f89729f05|
+|ERC721|0xD6939f722B977afd7DD934A31bc94d08d4ea4336|
+|ERC-1155|0xc45759e51CdDBa46db4D1becC8B8Bcbe5d4a9bB4|
 
 ## 3.1 Testing Documentation
 
@@ -139,12 +147,13 @@ console.log("signer", signer);
 })();
 ```
 
-## 3.3 Deployed Smart Contracts
+## 3.3 Deployed Smart Contracts on the Testnet
+
+Since there are no marketplaces on most of the testnets, use `UserNftMinter` contract for minting NFTs on the GateChain testnet. 
 
 |Name|GateChain Testnet Address|
 |:-:|:-:|
 |UserNftMinter|0x9cdda01E00A5A425143F952ee894ff99B5F7999F|
-|Erc1155Minter|0xeBCDdF17898bFFE81BCb3182833ba44f4dB25525|
-|XPNft1155|0x8CEe805FE5FA49e81266fcbC27F37D85062c1707|
-|XPNft|0x3fe9EfFa80625B8167B2F0d8cF5697F61D77e4a2|
-|Minter|0x2B24de7BFf5d2ab01b1C53682Ee5987c9BCf1BAc|
+|ERC-1155|0x8CEe805FE5FA49e81266fcbC27F37D85062c1707|
+|ERC0-721|0x3fe9EfFa80625B8167B2F0d8cF5697F61D77e4a2|
+|Bridge SC|0x2B24de7BFf5d2ab01b1C53682Ee5987c9BCf1BAc|
