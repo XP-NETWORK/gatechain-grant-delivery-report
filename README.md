@@ -19,7 +19,7 @@ NFT-Indexer fetches the information about the NFTs owned on GateChain:
 
 | Estimated Delivery Date | Deliverable | Specification |
 |:-:|:-:|:-|
-| 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474) <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain) <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3. We will make announcements about integrating GateChain in the bridge|
+| 2022/04/21 | Launch | 2.1 We have deployed smart contracts on the mainnet.<br/>2.2 We have integrated GateChain the:<br/> + [JavaScript Library](https://github.com/XP-NETWORK/xpjs/blob/9a46fbaa13f443c4fb4b7f1747e7786050d414be/src/factory/factories.ts#L474) <br/>+ [NFT-Indexer](https://github.com/XP-NETWORK/nft-index/search?q=gatechain) <br/>+ [Relay Validators](https://github.com/XP-NETWORK/migration-validator/blob/15d3f4f7d824767682fa022f2e69075539652a1c/src/config.ts#L248)<br/>2.3.[Testing documentation](#23-testing-documentation)<br/>2.4. We will make announcements about integrating GateChain in the bridge|
 
 ### 2.2.1 Deployed Smart Contracts on the Mainnet
 
